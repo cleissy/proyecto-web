@@ -1,0 +1,129 @@
+
+body {
+    background-color: #198754;
+}
+.wrapper {
+    margin: 0 auto;
+    max-width: 1140px;
+}
+.separator {
+    font-size: 8px;
+    line-height: 8px;
+}
+.nav {
+    background-color: #20c997;
+    border-radius: 0.25rem;
+    width: 100%;
+}
+.nav-pills .nav-link:hover {
+    background-color: #0dcaf0;
+}
+.nav-item {
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-size: smaller;
+    line-height: 1;
+    text-align: left;
+}
+.txt-link {
+    display: inline-block;
+    font-weight: bolder;
+    width: 90%;
+}
+.arrow {
+    display: inline-block;
+    text-align: right;
+    width: 10%;
+}
+.globe {
+    margin: 0 auto;
+    max-width: 280px;
+    width: 100%;
+}
+.header-txt {
+    color: white;
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-size: medium;
+    font-weight: bolder;
+    text-align: center;
+    margin: 10px 0 10px 0;
+}
+.content {
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 68%;
+}
+.h1-txt {
+    color: white;
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-size: larger;
+    font-weight: bolder;
+    text-align: center;
+    margin: 10px 0 10px 0;
+}
+.ask-txt {
+    color: white;
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-size: smaller;
+    font-weight: bolder;
+    text-align: center;
+    margin: 0 0 4px 0;
+}
+.content-txt {
+    color: white;
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-size: smaller;
+    font-weight: bolder;
+    text-align: center;
+    margin: 10px 0 20px 0;
+}
+.carousel-indicators {
+    margin-bottom: -1rem;
+}
+.imgCarousel {
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 12px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    height: 210px;
+    width: 210px;
+}
+.imgCarousel img {
+    border: 2px solid white;
+    border-radius: 12px;
+    margin: 0 auto;
+    height: 200px;
+    width: 200px;
+}
+.form-control {
+    font-size: 0.8rem;
+    line-height: 1;
+    padding: .2rem .75rem;
+}
+.btn {
+    font-size: 0.8rem;
+    line-height: 1;
+    padding: .3rem .75rem;
+    width: 132px;
+}
+.divChart {
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 12px;
+    margin: 0 auto;
+    max-height: 200px;
+    max-width: 200px;
+    height: 100%;
+    width: 100%;
+}
+.myChart {
+    max-height: 200px;
+    max-width: 200px;
+    height: 100%;
+    width: 100%;
+}
+.txtChart {
+    margin: 4px 0 4px 0;
+}

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mariola TS, Alfonso">
+    <meta name="keywords" content="Carbono, CO2, Contaminación, Ecología">
+    <meta name="description" content="Blog sobre Carbono">
+    <title>Huella de Carbono</title>
+    <link rel="icon" type="image/x-icon" href="../icon/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Courgette&family=Fuzzy+Bubbles:wght@400;700&display=swap">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+<div class="wrapper">
+    <div class="container">
+        <nav align="center" class="navbar navbar-expand-lg navbar-dark">
+            <ul class="nav nav-pills flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html"><span class="txt-link">Home</span><span class="arrow">&#11166;</span></a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"><span class="txt-link">Calcular</span><span class="arrow">&#11166;</span></a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="info.html"><span class="txt-link">¿Qué es?</span><span class="arrow">&#11166;</span></a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="enlaces.html"><span class="txt-link">Enlaces</span><span class="arrow">&#11166;</span></a>
+                </li>
+            </ul>
+        </nav>
+        <div id="carouselIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-touch="true" data-bs-interval="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" aria-label="Slide 1" class="active" aria-current="true"></button>
+              <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+              <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+              <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="imgCarousel">
+                    <img src="../img/house.jpg" class="d-block" alt="house" height="200px" width="200px">
+                </div>
+                <div class="content">
+                    <p class="ask-txt">¿Cuántas personas viven en tu casa?</p>
+                    <table align="center" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td>
+                                <input class="form-control" id="PERSONAS" name="PERSONAS" type="number" placeholder="number" aria-label="number" style="text-align: center;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" class="separator">
+                                &nbsp;
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                <button type="button" class="btn btn-primary" id="butt01">Siguiente</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="imgCarousel">
+                    <img src="../img/electric_plug.jpg" class="d-block" alt="electric" height="200px" width="200px">
+                </div>
+                <div class="content">
+                    <p class="ask-txt">¿Aproximadamente, cuánto pagas al mes por el servicio de energía eléctrica?</p>
+                    <table align="center" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td>
+                                <input class="form-control" id="ELECTRICIDAD" name="ELECTRICIDAD" type="number" placeholder="number" aria-label="number" style="text-align: center;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" class="separator">
+                                &nbsp;
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                <button type="button" class="btn btn-primary" id="butt02">Siguiente</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="imgCarousel">
+                    <img src="../img/gas_pipelines.jpg" class="d-block" alt="gas natural" height="200px" width="200px">
+                </div>
+                <div class="content">
+                    <p class="ask-txt">¿Cuánto gas natural usas al mes?</p>
+                    <table align="center" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td>
+                                <input class="form-control" id="GAS_NATURAL" name="GAS_NATURAL" type="number" placeholder="number" aria-label="number" style="text-align: center;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" class="separator">
+                                &nbsp;
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                <button type="button" class="btn btn-primary" id="butt03">Siguiente</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="imgCarousel">
+                    <img src="../img/kitchen_gas_stove.jpg" class="d-block" alt="gas butano" height="200px" width="200px">
+                </div>
+                <div class="content">
+                    <p class="ask-txt">¿Cuánto pagas al mes por el servicio de gas butano?</p>
+                    <table align="center" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td>
+                                <input class="form-control" id="GAS_BUTANO" name="GAS_BUTANO" type="number" placeholder="number" aria-label="number" style="text-align: center;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" class="separator">
+                                &nbsp;
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                <button type="button" class="btn btn-primary" id="butt04">Siguiente</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="imgCarousel">
+                    <img src="../img/gas_nozzle.jpg" class="d-block" alt="gasoil" height="200px" width="200px">
+                </div>
+                <div class="content">
+                    <p class="ask-txt">¿Tienes vehículo propio?</p>
+                    <table align="center" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td>
+                                <input class="form-control" id="GASOLINA" name="GASOLINA" type="number" placeholder="number" aria-label="number" style="text-align: center;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" class="separator">
+                                &nbsp;
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                <button type="button" class="btn btn-primary" id="butt05">Siguiente</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="imgCarousel">
+                    <img src="../img/bus.jpg" class="d-block" alt="public transport" height="200px" width="200px">
+                </div>
+                <div class="content">
+                    <p class="ask-txt">¿Usas transporte público?</p>
+                    <table align="center" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td>
+                                <input class="form-control" id="TRANSPORTES" name="TRANSPORTES" type="number" placeholder="number" aria-label="number" style="text-align: center;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" class="separator">
+                                &nbsp;
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                <button type="button" class="btn btn-primary" id="butt06">Siguiente</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="imgCarousel">
+                    <img src="../img/plane.jpg" class="d-block" alt="fly" height="200px" width="200px">
+                </div>
+                <div class="content">
+                    <p class="ask-txt">¿Cuántas veces al año viajas en avión?</p>
+                    <table align="center" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td>
+                                <input class="form-control" id="VIAJES" name="VIAJES" type="number" placeholder="number" aria-label="number" style="text-align: center;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" class="separator">
+                                &nbsp;
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                <button type="button" class="btn btn-primary" id="butt07">Siguiente</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="divChart">
+                    <canvas id="myChart" class="myChart" width="200" height="200"></canvas>
+                </div>
+                <div class="txtChart">
+                    <p class="ask-txt">GRÁFICO</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators" data-bs-slide="next" id="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="../js/myjs.js"></script>
+<script src="../js/chart.min.js"></script>
+<script src="../js/mychart.js"></script>
+</body>
+</html>
