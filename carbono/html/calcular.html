@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html5>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -16,24 +16,16 @@
     <link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
 <body>
-<div class="wrapper">
-    <div class="container">
-        <nav align="center" class="navbar navbar-expand-lg navbar-dark">
-            <ul class="nav nav-pills flex-column">
-                <li class="nav-item">
-                    <a class="nav-link" href="../index.html"><span class="txt-link">Home</span><span class="arrow">&#11166;</span></a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"><span class="txt-link">Calcular</span><span class="arrow">&#11166;</span></a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="info.html"><span class="txt-link">¿Qué es?</span><span class="arrow">&#11166;</span></a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="enlaces.html"><span class="txt-link">Enlaces</span><span class="arrow">&#11166;</span></a>
-                </li>
-            </ul>
-        </nav>
+   <nav> 
+        <div id="nav"> 
+        <div class="menu"  onclick="window.location.href='../index.html';"> Inicio </div>
+            <div class="menu" onclick="window.location.href='#';">Calcular</div>
+            <div class="menu" onclick="window.location.href='info.html';"> Info</div>
+        </div>
+        <hr id= "line"> </hr>
+    
+    </nav>
+
         <div id="carouselIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-touch="true" data-bs-interval="false">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" aria-label="Slide 1" class="active" aria-current="true"></button>
@@ -50,12 +42,12 @@
                 <div class="imgCarousel">
                     <img src="../img/house.jpg" class="d-block" alt="house" height="200px" width="200px">
                 </div>
-                <div class="content">
+                <div class="contentcalc">
                     <p class="ask-txt">¿Cuántas personas viven en tu casa?</p>
                     <table align="center" cellpadding="0" cellspacing="0">
                         <tr>
                             <td>
-                                <input class="form-control" id="PERSONAS" name="PERSONAS" type="number" placeholder="number" aria-label="number" style="text-align: center;">
+                                <input class="form-control" id="PERSONAS" name="PERSONAS" type="number" placeholder="número" aria-label="number" style="text-align: center;">
                             </td>
                         </tr>
                         <tr>
@@ -69,18 +61,19 @@
                             </td>
                         </tr>
                     </table>
+            
                 </div>
               </div>
               <div class="carousel-item">
                 <div class="imgCarousel">
                     <img src="../img/electric_plug.jpg" class="d-block" alt="electric" height="200px" width="200px">
                 </div>
-                <div class="content">
-                    <p class="ask-txt">¿Aproximadamente, cuánto pagas al mes por el servicio de energía eléctrica?</p>
+                <div class="contentcalc">
+                    <p class="ask-txt">¿Aproximadamente, cuánto pagas cada mes por el servicio de energía eléctrica?</p>
                     <table align="center" cellpadding="0" cellspacing="0">
                         <tr>
                             <td>
-                                <input class="form-control" id="ELECTRICIDAD" name="ELECTRICIDAD" type="number" placeholder="number" aria-label="number" style="text-align: center;">
+                                <input class="form-control" id="ELECTRICIDAD" name="ELECTRICIDAD" type="number" placeholder="número" aria-label="number" style="text-align: center;">
                             </td>
                         </tr>
                         <tr>
@@ -100,12 +93,12 @@
                 <div class="imgCarousel">
                     <img src="../img/gas_pipelines.jpg" class="d-block" alt="gas natural" height="200px" width="200px">
                 </div>
-                <div class="content">
-                    <p class="ask-txt">¿Cuánto gas natural usas al mes?</p>
+                <div class="contentcalc">
+                    <p class="ask-txt">¿Cuánto pagas cada mes por el servicio de gas domiciliario?</p>
                     <table align="center" cellpadding="0" cellspacing="0">
                         <tr>
                             <td>
-                                <input class="form-control" id="GAS_NATURAL" name="GAS_NATURAL" type="number" placeholder="number" aria-label="number" style="text-align: center;">
+                                <input class="form-control" id="GAS_NATURAL" name="GAS_NATURAL" type="number" placeholder="número" aria-label="number" style="text-align: center;">
                             </td>
                         </tr>
                         <tr>
@@ -125,12 +118,12 @@
                 <div class="imgCarousel">
                     <img src="../img/kitchen_gas_stove.jpg" class="d-block" alt="gas butano" height="200px" width="200px">
                 </div>
-                <div class="content">
-                    <p class="ask-txt">¿Cuánto pagas al mes por el servicio de gas butano?</p>
+                <div class="contentcalc">
+                    <p class="ask-txt">¿Cuántos cilindros de gas usas al mes?</p>
                     <table align="center" cellpadding="0" cellspacing="0">
                         <tr>
                             <td>
-                                <input class="form-control" id="GAS_BUTANO" name="GAS_BUTANO" type="number" placeholder="number" aria-label="number" style="text-align: center;">
+                                <input class="form-control" id="GAS_BUTANO" name="GAS_BUTANO" type="number" placeholder="número" aria-label="number" style="text-align: center;">
                             </td>
                         </tr>
                         <tr>
@@ -150,12 +143,12 @@
                 <div class="imgCarousel">
                     <img src="../img/gas_nozzle.jpg" class="d-block" alt="gasoil" height="200px" width="200px">
                 </div>
-                <div class="content">
-                    <p class="ask-txt">¿Tienes vehículo propio?</p>
+                <div class="contentcalc">
+                    <p class="ask-txt">¿Cuántos pagas de gasolina al mes?</p>
                     <table align="center" cellpadding="0" cellspacing="0">
                         <tr>
                             <td>
-                                <input class="form-control" id="GASOLINA" name="GASOLINA" type="number" placeholder="number" aria-label="number" style="text-align: center;">
+                                <input class="form-control" id="GASOLINA" name="GASOLINA" type="number" placeholder="número" aria-label="number" style="text-align: center;">
                             </td>
                         </tr>
                         <tr>
@@ -173,14 +166,14 @@
               </div>
               <div class="carousel-item">
                 <div class="imgCarousel">
-                    <img src="../img/bus.jpg" class="d-block" alt="public transport" height="200px" width="200px">
+                    <img src="../img/gas_nozzle.jpg" class="d-block" alt="diesel" height="200px" width="200px">
                 </div>
-                <div class="content">
-                    <p class="ask-txt">¿Usas transporte público?</p>
+                <div class="contentcalc">
+                    <p class="ask-txt">¿Cuántos pagas de diesel al mes?</p>
                     <table align="center" cellpadding="0" cellspacing="0">
                         <tr>
                             <td>
-                                <input class="form-control" id="TRANSPORTES" name="TRANSPORTES" type="number" placeholder="number" aria-label="number" style="text-align: center;">
+                                <input class="form-control" id="DIESEL" name="DIESEL" type="number" placeholder="número" aria-label="number" style="text-align: center;">
                             </td>
                         </tr>
                         <tr>
@@ -198,14 +191,14 @@
               </div>
               <div class="carousel-item">
                 <div class="imgCarousel">
-                    <img src="../img/plane.jpg" class="d-block" alt="fly" height="200px" width="200px">
+                    <img src="../img/bus.jpg" class="d-block" alt="public transport" height="200px" width="200px">
                 </div>
-                <div class="content">
-                    <p class="ask-txt">¿Cuántas veces al año viajas en avión?</p>
+                <div class="contentcalc">
+                    <p class="ask-txt">¿Cuantos kilómetros recorres en transporte público al mes?</p>
                     <table align="center" cellpadding="0" cellspacing="0">
                         <tr>
                             <td>
-                                <input class="form-control" id="VIAJES" name="VIAJES" type="number" placeholder="number" aria-label="number" style="text-align: center;">
+                                <input class="form-control" id="TRANSPORTES" name="TRANSPORTES" type="number" placeholder="número" aria-label="number" style="text-align: center;">
                             </td>
                         </tr>
                         <tr>
@@ -222,11 +215,36 @@
                 </div>
               </div>
               <div class="carousel-item">
+                <div class="imgCarousel">
+                    <img src="../img/plane.jpg" class="d-block" alt="fly" height="200px" width="200px">
+                </div>
+                <div class="contentcalc">
+                    <p class="ask-txt">¿Cuántos kilómetros recorres al año en avión?</p>
+                    <table align="center" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td>
+                                <input class="form-control" id="VIAJES" name="VIAJES" type="number" placeholder="número" aria-label="number" style="text-align: center;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" class="separator">
+                                &nbsp;
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                <button type="button" class="btn btn-primary" id="butt08" data-bs-target="#carouselIndicators" data-bs-slide="next">Siguiente</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+              </div>
+              <div class="carousel-item">
                 <div class="divChart">
                     <canvas id="myChart" class="myChart" width="200" height="200"></canvas>
                 </div>
                 <div class="txtChart">
-                    <p class="ask-txt">GRÁFICO</p>
+                    <p class="ask-txtgraf">GRÁFICO</p>
                 </div>
               </div>
             </div>
@@ -246,5 +264,28 @@
 <script src="../js/myjs.js"></script>
 <script src="../js/chart.min.js"></script>
 <script src="../js/mychart.js"></script>
+
+<footer id="foot">
+    
+    
+    <div class="texto"> 
+        <li>
+            <ul>Política de privacidad</ul>
+            <ul>© 2021</ul>
+        </li>
+    </div>
+
+
+    <div class="redes"> 
+        <div class="icon">
+            <img src="../img/background-forest-2.png">
+        </div>
+        
+    </div>
+    
+    
+    
+
+</footer>
 </body>
 </html>

@@ -1,6 +1,6 @@
 
 body {
-    background-color: #198754;
+    background-color: white;
 }
 .wrapper {
     margin: 0 auto;
@@ -10,37 +10,87 @@ body {
     font-size: 8px;
     line-height: 8px;
 }
-.nav {
-    background-color: #20c997;
-    border-radius: 0.25rem;
-    width: 100%;
+#nav{
+    height: 60px;
+    width: 90%;
+    border-radius: 10px;
+    display: flex;
+    margin: 20px auto;
+    gap: 5px;
 }
+#navinfo{
+    height: 60px;
+    width: 90%;
+    border-radius: 10px;
+    display: flex;
+    margin: 30px auto 10px auto;
+    gap: 5px;
+}
+
+#line{
+    height: 5px;
+    box-shadow: 0px 0px 5px black inset, 0 10px 20px darkgray;
+
+}
+hr {
+    margin: 0 auto; 
+    color: darkgray; 
+    background-color: none; 
+    border: 0; 
+    opacity: 0.6; 
+    width: 90%;
+    border-radius: 3px;
+}
+
+.menu{
+    background-color: lightgray;
+    border: solid black;
+    border-width: 2px;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+    margin: 10 0 10 0;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 2px 2px darkgrey;
+    height: 45px;
+    
+}
+.menu:hover{
+    background-color:rgba(7, 136, 7, 0.774); 
+    box-shadow: 0px 0px 15px rgba(7, 136, 7, 0.774); 
+    color: white;
+    cursor: pointer;
+}
+
 .nav-pills .nav-link:hover {
-    background-color: #0dcaf0;
+    background-color:rgba(7, 136, 7, 0.774); 
+    box-shadow: 0px 0px 15px rgba(7, 136, 7, 0.774); 
+    color: rgba(7, 136, 7, 0.774);;
+    cursor: pointer;
+    text-decoration: none;
+    
 }
 .nav-item {
-    font-family: 'Fuzzy Bubbles', cursive;
-    font-size: smaller;
-    line-height: 1;
-    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    text-align: center;
 }
 .txt-link {
     display: inline-block;
     font-weight: bolder;
     width: 90%;
+    text-decoration: none;
+    color: black;
 }
-.arrow {
-    display: inline-block;
-    text-align: right;
-    width: 10%;
-}
+
 .globe {
-    margin: 0 auto;
+    margin: 30 auto;
     max-width: 280px;
     width: 100%;
 }
 .header-txt {
-    color: white;
+    color: rgba(7, 136, 7, 0.774);;
     font-family: 'Fuzzy Bubbles', cursive;
     font-size: medium;
     font-weight: bolder;
@@ -52,9 +102,18 @@ body {
     padding-top: 10px;
     padding-bottom: 10px;
     width: 68%;
+    height: 365px;
+    margin-top: 50px;
+}
+
+.contentcalc {
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 68%;
 }
 .h1-txt {
-    color: white;
+    color: rgba(7, 136, 7, 0.774);;
     font-family: 'Fuzzy Bubbles', cursive;
     font-size: larger;
     font-weight: bolder;
@@ -62,15 +121,23 @@ body {
     margin: 10px 0 10px 0;
 }
 .ask-txt {
-    color: white;
+    color: rgba(7, 136, 7, 0.774);
     font-family: 'Fuzzy Bubbles', cursive;
     font-size: smaller;
     font-weight: bolder;
     text-align: center;
     margin: 0 0 4px 0;
 }
+.ask-txtgraf {
+    color:rgba(7, 136, 7, 0.774);
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-size: smaller;
+    font-weight: bolder;
+    text-align: center;
+    margin: 0 0 90px 0;
+}
 .content-txt {
-    color: white;
+    color: rgba(7, 136, 7, 0.774);;
     font-family: 'Fuzzy Bubbles', cursive;
     font-size: smaller;
     font-weight: bolder;
@@ -79,10 +146,15 @@ body {
 }
 .carousel-indicators {
     margin-bottom: -1rem;
+    
+    
+}
+#carouselIndicators{
+    margin-top: 50px;
 }
 .imgCarousel {
-    background-color: white;
-    border: 2px solid white;
+    background-color:rgba(7, 136, 7, 0.774); 
+    border: 2px solid rgba(7, 136, 7, 0.774);;
     border-radius: 12px;
     margin: 0 auto;
     display: flex;
@@ -91,7 +163,7 @@ body {
     width: 210px;
 }
 .imgCarousel img {
-    border: 2px solid white;
+    border: 2px solid rgba(7, 136, 7, 0.774);;
     border-radius: 12px;
     margin: 0 auto;
     height: 200px;
@@ -110,20 +182,81 @@ body {
 }
 .divChart {
     background-color: white;
-    border: 2px solid white;
+    border: 2px solid rgba(7, 136, 7, 0.774);
     border-radius: 12px;
     margin: 0 auto;
-    max-height: 200px;
-    max-width: 200px;
+    max-height: 400px;
+    max-width: 400px;
     height: 100%;
     width: 100%;
 }
 .myChart {
-    max-height: 200px;
-    max-width: 200px;
+    max-height: 400px;
+    max-width: 400px;
     height: 100%;
     width: 100%;
 }
 .txtChart {
     margin: 4px 0 4px 0;
+}
+#foot{
+    
+    /*background-color: rgba(255, 255, 255, 0.4);*/
+    height: 100px;
+    width: 100%;
+    background-color: rgba(255, 182, 87, 0.774);
+    border-radius: 5px;
+    background-position-y: bottom;
+    box-shadow: 0px 0px 10px black inset, 0px 20px 10px black;
+    margin-top: 5%;
+    
+    
+}
+#footinfo{
+    
+    /*background-color: rgba(255, 255, 255, 0.4);*/
+    height: 100px;
+    width: 100%;
+    background-color: rgba(255, 182, 87, 0.774);
+    border-radius: 5px;
+    background-position-y: bottom;
+    box-shadow: 0px 0px 10px black inset, 0px 20px 10px black;
+    margin-top: 1.%;
+    
+}
+.texto{
+    height: 60px;
+    width: 45%;
+    border-radius: 10px;
+    display: flex;
+    gap: 5px;
+    float: left;
+    list-style-type: none;
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-size: smaller;
+    font-weight: bolder;
+    margin-top: 10px;
+
+}
+.redes{
+    
+    width: 45%;
+    border-radius: 10px;
+    display: flex;
+    gap: 5px;
+    float: right;
+    justify-content: right;
+    margin: 30 0 10 0;
+
+}
+.icon img{
+    height: 70px;
+    width: auto;
+   
+}
+.iconinfo img{
+    height: 70px;
+    width: auto;
+    margin-top: 30px;
+   
 }

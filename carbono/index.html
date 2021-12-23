@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html5>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -16,30 +16,21 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-<div class="wrapper">
-    <div class="container">
-        <nav align="center" class="navbar navbar-expand-lg navbar-dark">
-            <ul class="nav nav-pills flex-column">
-                <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"><span class="txt-link">Home</span><span class="arrow">&#11166;</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="html/calcular.html" target="_self"><span class="txt-link">Calcular</span><span class="arrow">&#11166;</span></a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="html/info.html" target="_self"><span class="txt-link">¿Qué es?</span><span class="arrow">&#11166;</span></a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="html/enlaces.html"><span class="txt-link">Enlaces</span><span class="arrow">&#11166;</span></a>
-                </li>
-            </ul>
-        </nav>
+    <nav> 
+        <div id="nav"> 
+        <div class="menu"  onclick="window.location.href='#';"> Inicio </div>
+            <div class="menu" onclick="window.location.href='html/calcular.html';">Calcular</div>
+            <div class="menu" onclick="window.location.href='html/info.html';"> Info</div>
+        </div>
+        <hr id= "line"> </hr>
+    
+    </nav>
         <div class="globe">
             <svg id="globe_with_satellites" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60">
                 <defs>
                     <style>
                     .cls-1 {
-                        fill: #fff;
+                        fill: rgba(7, 136, 7, 0.774);;
                     }
                     .clip_color {
                         fill: rgba(0,0,0,0);
@@ -133,5 +124,30 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <script src="js/myjs.js"></script>
+
+
+<footer id="foot">
+    
+    
+    <div class="texto"> 
+        <li>
+            <ul>Política de privacidad</ul>
+            <ul>© 2021</ul>
+        </li>
+    </div>
+
+
+    <div class="redes"> 
+        <div class="icon">
+            <img src="img/background-forest-2.png">
+        </div>
+        
+    </div>
+    
+    
+    
+
+</footer>
+
 </body>
 </html>

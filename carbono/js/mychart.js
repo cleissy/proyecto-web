@@ -1,23 +1,26 @@
 var myChart;
-const personas = document.querySelector('div.content input[name="PERSONAS"]');
+const personas = document.querySelector('div.contentcalc input[name="PERSONAS"]');
 var personasVal = [];
 var personasValL;
-const electricidad = document.querySelector('div.content input[name="ELECTRICIDAD"]');
+const electricidad = document.querySelector('div.contentcalc input[name="ELECTRICIDAD"]');
 var electricidadVal = [];
 var electricidadValL;
-const gasNat = document.querySelector('div.content input[name="GAS_NATURAL"]');
+const gasNat = document.querySelector('div.contentcalc input[name="GAS_NATURAL"]');
 var gasNatVal = [];
 var gasNatValL;
-const gasBut = document.querySelector('div.content input[name="GAS_BUTANO"]');
+const gasBut = document.querySelector('div.contentcalc input[name="GAS_BUTANO"]');
 var gasButVal = [];
 var gasButValL;
-const gasolina = document.querySelector('div.content input[name="GASOLINA"]');
+const gasolina = document.querySelector('div.contentcalc input[name="GASOLINA"]');
 var gasolinaVal = [];
 var gasolinaValL;
-const transportes = document.querySelector('div.content input[name="TRANSPORTES"]');
+const diesel = document.querySelector('div.contentcalc input[name="DIESEL"]');
+var dieselVal = [];
+var dieselValL;
+const transportes = document.querySelector('div.contentcalc input[name="TRANSPORTES"]');
 var transportesVal = [];
 var transportesValL;
-const viajes = document.querySelector('div.content input[name="VIAJES"]');
+const viajes = document.querySelector('div.contentcalc input[name="VIAJES"]');
 var viajesVal = [];
 var viajesValL;
 personas.onchange = function(){
@@ -34,7 +37,8 @@ electricidad.onchange = function(){
     {
     window.myChart.destroy();
     }
-    electricidadVal.push(electricidad.value);
+    var electricidadco2= ((((electricidad.value /30)/24)/0.25407)*0.357)*personas.value;
+    electricidadVal.push(electricidadco2);
     electricidadValL = electricidadVal.slice(-1).pop();
     doChart();
 }
@@ -43,7 +47,8 @@ gasNat.onchange = function(){
     {
     window.myChart.destroy();
     }
-    gasNatVal.push(gasNat.value);
+    var gasNatco2= ((gasNat.value-8.45)/0.05076)*0.252;
+    gasNatVal.push(gasNatco2);
     gasNatValL = gasNatVal.slice(-1).pop();
     doChart();
 }
@@ -52,7 +57,8 @@ gasBut.onchange = function(){
     {
     window.myChart.destroy();
     }
-    gasButVal.push(gasBut.value);
+    var gasButco2= (gasBut.value) *40.386;
+    gasButVal.push(gasButco2);
     gasButValL = gasButVal.slice(-1).pop();
     doChart();
 }
@@ -61,8 +67,19 @@ gasolina.onchange = function(){
     {
     window.myChart.destroy();
     }
-    gasolinaVal.push(gasolina.value);
+    var gasolinaco2= (gasolina.value /1.5)*0.023;
+    gasolinaVal.push(gasolinaco2);
     gasolinaValL = gasolinaVal.slice(-1).pop();
+    doChart();
+}
+diesel.onchange = function(){
+    if(window.myChart instanceof Chart)
+    {
+    window.myChart.destroy();
+    }
+    var dieselco2= (diesel.value /1.36)*0.0261;
+    dieselVal.push(dieselco2);
+    dieselValL = dieselVal.slice(-1).pop();
     doChart();
 }
 transportes.onchange = function(){
@@ -70,7 +87,8 @@ transportes.onchange = function(){
     {
     window.myChart.destroy();
     }
-    transportesVal.push(transportes.value);
+    transportesco2= ((((transportes.value *35)/100)*0.544)/50);
+    transportesVal.push(transportesco2);
     transportesValL = transportesVal.slice(-1).pop();
     doChart();
 }
@@ -79,17 +97,18 @@ viajes.onchange = function(){
     {
     window.myChart.destroy();
     }
-    viajesVal.push(viajes.value);
+    viajesco2= (viajes.value * 0.285);
+    viajesVal.push(viajesco2);
     viajesValL = viajesVal.slice(-1).pop();
     doChart();
 }
 function doChart() {
 var data = [
-    {x: 'Personas', y: {value: personasValL}},
     {x: 'Electricidad', y: {value: electricidadValL}},
     {x: 'Gas Natural', y: {value: gasNatValL}},
     {x: 'Gas Butano', y: {value: gasButValL}},
     {x: 'Gasolina', y: {value: gasolinaValL}},
+    {x: 'Diesel', y: {value: dieselValL}},
     {x: 'Transportes', y: {value: transportesValL}},
     {x: 'Viajes', y: {value: viajesValL}}
 ];
@@ -97,9 +116,9 @@ const ctx = document.getElementById('myChart');
  myChart = new Chart(ctx, {
     type: 'bar',
     data: {
-        labels: ['Personas', 'Electricidad', 'Gas Natural', 'Gas Butano', 'Gasolina', 'Transportes', 'Viajes'],
+        labels: ['Electricidad', 'Gas Natural', 'Gas Butano', 'Gasolina', 'Diesel', 'Transportes', 'Viajes'],
         datasets: [{
-            label: 'CO2',
+            label: 'Kg de CO2',
             data: data,
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
