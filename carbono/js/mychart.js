@@ -110,7 +110,8 @@ var data = [
     {x: 'Gasolina', y: {value: gasolinaValL}},
     {x: 'Diesel', y: {value: dieselValL}},
     {x: 'Transportes', y: {value: transportesValL}},
-    {x: 'Viajes', y: {value: viajesValL}}
+    {x: 'Viajes', y: {value: viajesValL}},
+    {x: 'Total', y: {value: electricidadValL + gasNatValL + gasButValL + gasolinaValL + dieselValL + transportesValL + viajesValL}}
 ];
 const ctx = document.getElementById('myChart');
  myChart = new Chart(ctx, {
